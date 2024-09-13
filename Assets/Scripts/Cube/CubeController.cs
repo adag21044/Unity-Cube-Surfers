@@ -9,7 +9,7 @@ public class CubeController : MonoBehaviour
 
     private void Start()
     {
-        heroStackController = GameObject.FindObjectOfType<HeroStackController>(); 
+        heroStackController = FindObjectOfType<HeroStackController>(); 
     }
 
     private void FixedUpdate()
