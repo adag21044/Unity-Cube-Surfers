@@ -19,21 +19,23 @@ public class CubeController : MonoBehaviour
 
     private void CubeRaycast()
     {
-        if(Physics.Raycast(transform.position, direction, out hit, 1f))
+        Vector3 halfExtents = new Vector3(0.5f, 0.5f, 0.5f); // Customize the size as needed
+        if (Physics.BoxCast(transform.position, halfExtents, direction, out hit, Quaternion.identity, 1f))
         {
-            if(!isStack)
+            if (!isStack)
             {
                 isStack = true;
-                heroStackController.IncreaseBlockStack(gameObject); 
+                heroStackController.IncreaseBlockStack(gameObject);
                 SetDirection();
             }
 
-            if(hit.transform.name == "ObstacleCube")
+            if (hit.transform.name == "ObstacleCube")
             {
                 heroStackController.DecreaseBlockStack(gameObject);
             }
         }
     }
+
 
     private void SetDirection()
     {
