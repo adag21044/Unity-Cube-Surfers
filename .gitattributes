@@ -1,6 +1,14 @@
+# Force C# detection for .cs files
 *.cs linguist-language=CSharp
+
+# Ignore shader files in language statistics
 *.shader linguist-vendored
 *.hlsl linguist-vendored
 *.cginc linguist-vendored
 *.compute linguist-vendored
+
+# Ignore Unity metadata files
 *.meta linguist-detectable=false
+
+# Example: Mark all .mat files as Text to avoid Mathematica detection
+*.mat linguist-language=Text
