@@ -1,13 +1,9 @@
-*.cs linguist-language=C# 
-*.unity linguist-language=Text
-*.meta linguist-language=Text
-*.shader linguist-language=Text 
-*.cginc linguist-language=Text 
-*.dll linguist-vendored
-*.exe linguist-vendored
-*.pdf linguist-vendored
-*.so linguist-vendored
-*.jar linguist-vendored
-*.a linguist-vendored
-*.lib linguist-vendored
-*.obj linguist-vendored
+*.cs linguist-language=C#
+*.shader linguist-language=HLSL
+*.uxml linguist-language=XML
+*.uss linguist-language=CSS
+
+# Ignore typical Unity folders
+Assets/** linguist-vendored
+Library/** linguist-vendored
+Packages/** linguist-vendored
