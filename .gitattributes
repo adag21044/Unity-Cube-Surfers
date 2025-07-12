@@ -1,9 +1,1 @@
 *.cs linguist-language=C#
-*.shader linguist-language=HLSL
-*.uxml linguist-language=XML
-*.uss linguist-language=CSS
-
-# Ignore typical Unity folders
-Assets/** linguist-vendored
-Library/** linguist-vendored
-Packages/** linguist-vendored
